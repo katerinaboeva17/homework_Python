@@ -29,22 +29,45 @@
 
 # Реализуйте алгоритм перемешивания списка, без использования встроеных методов (особенно SHUFFLE, без него) можно (нужно) использовать библиотеку Random
 
-
-
 # import random
-# def mix_list(list_original):
-#     list = list_original[:]
-#     list_length = len(list)
-#     for i in range(list_length):
-#         index = random.randint(0, list_length - 1)
-#         temp = list[i]
-#         list[i] = list[index]
-#         list[index] = temp
-#     return list
+# newlist=[]
 # list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# mixed_list = mix_list(list)
+# for i in range(len(list)):
+#     index = random.randint(0, len(list) - 1)
+#     newlist.append(list[index])
 # print("Исходный список: ")
 # print(list)
 # print("Перемешанный список: ")
-# print(mixed_list)
+# print(newlist)
 
+
+# Напишите программу, которая находит сумму цифр числа.
+
+# num = float(input('Введите число: '))
+# num = str(num)
+# sum = 0
+# for i in num:
+#     if i.isdigit():
+#         sum += int(i)
+# print(sum)
+
+
+# path = 'file.txt'
+# import random
+# num = int(input('Введите размер массива: '))
+# mylist=[]
+# for _ in range(num):
+#     mylist.append(random.randint(-num, num))
+# print(mylist)
+# data=open (path, 'r')
+# f1=data.readline()[:-1]
+# f2=data.readline()
+# data.close
+# print(f1, end = " ")
+# print(f2, end = " ")
+# print(mylist[int(f1)]*mylist[int(f2)])
+
+
+# path = 'file.txt'
+# with open(path, 'w', encoding='UTF-8') as data:
+#     data.write('Привет')
